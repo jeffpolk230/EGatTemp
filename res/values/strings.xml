@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EgatFragment</string>
+    <string name="hello_world">Hello world!</string>
+   
+    
+    <!-- Measurement fragment resources -->
+	<string name="measurement_title">Capacitor Measurement</string>
+	<string name="jobNumber_title">Job Number</string>
+	<string name="substation_title">Substation</string>
+	<string name="levelVoltage_title">Level Voltage</string>
+	<string name="rated_title">Rated</string>
+	<string name="capacitorSerialNumber_title">Capacitor Serial No.</string>
+	<string name="alias_title">Alias</string>
+	
+	<string name="configure_115kv60unit">
+        200;300
+    </string>
+	<!-- Settings -->
+    <string name="language_title">Language: </string>
+    
+    
+</resources>

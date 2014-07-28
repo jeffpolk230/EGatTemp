@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="substation_array">
+        <item>SubStation Bangkok</item>
+        <item>Substation Phuket</item>
+        <item>Substation AIT </item>
+    </string-array>
+    
+    <string-array name="levelVoltage_array">
+        <item>230kV</item>
+        <item>115kV</item>
+    </string-array>
+    
+    <string-array name="rated_array">
+        <item>Great</item>
+        <item>Normal</item>
+        <item>Average</item>
+        <item>Secondary</item>
+        <item>moderate</item>
+    </string-array>
+    
+    <string-array name="configuration_array">
+        <item>115kV 60Unit C-Bank Config.</item>
+        <item>115kV 66Unit C-Bank Config.</item>
+        <item>115kV 99UnitR4 C-Bank Config.</item>
+        <item>115kV 99UnitR6 C-Bank Config.</item>
+        <item>115kV 132UnitR3 C-Bank Config.</item>        
+        <item>230kV 180UnitR1 C-Bank Config.</item>
+    </string-array>
+    
+    <string-array name="label_location">
+        <item>20;30</item>
+    </string-array>
+    
+    <!-- Storing all XY location of each configuration background -->
+    <string-array name="configure_115kv60unit">
+        <item>235;130</item>
+        <item>300;400</item>
+    </string-array>
+    
+    <!-- Menu items of lefthand side -->
+    <string-array name="menu_array">
+        <item>Measurement</item>
+        <item>Capacitor List</item>
+        <item>Installation Mode</item>
+        <item>Maintenance</item>
+        <item>Settings</item>
+        <item>Testing</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"   
+    android:orientation="horizontal"
+    android:paddingTop="20dp" 
+    android:paddingLeft="10dp">  
+    <TextView
+        android:id="@+id/measuringTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EGat Measuring(Fragment)" />
+
+    <RelativeLayout
+        android:id="@+id/leftCol"
+        android:layout_width="400dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/measuringTitle"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Number:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editJobNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:width="230dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SubStation"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/substation"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:width="230dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout2"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level Voltage:"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/levelVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:width="230dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout3"
+            android:layout_below="@+id/linearLayout3"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rated:"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/rated"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:width="230dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout4"
+            android:layout_below="@+id/linearLayout4"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cap Serial No."
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editCapSerialNo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:width="230dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout5"
+            android:layout_below="@+id/linearLayout5"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alias:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editAlias"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:width="230dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/leftCol" >
+
+        <TextView
+            android:id="@+id/conStatusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measuring Unit Connection Status: " />
+
+        <TextView
+            android:id="@+id/conStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/conStatusTitle"
+            android:text="init" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVoltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/conStatus"
+            android:layout_below="@+id/conStatus"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Measuring Voltage: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/measuringVoltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="init"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayoutVoltage"
+            android:layout_below="@+id/linearLayoutVoltage"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/measuringFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="init"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayoutFrequency"
+            android:layout_below="@+id/linearLayoutFrequency"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/measuringCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="init"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCapValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayoutCurrent"
+            android:layout_below="@+id/linearLayoutCurrent"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capacitor Value: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/measuringCapValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="init"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutErrorRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayoutCapValue"
+            android:layout_below="@+id/linearLayoutCapValue"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error Rate: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/measuringErrorRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="init"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/takingMeasureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutErrorRate"
+            android:layout_marginTop="10dp"
+            android:text="Take Measure" />
+
+        <Button
+            android:id="@+id/addCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/takingMeasureButton"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/takingMeasureButton"
+            android:text="Add Cap" />
+
+	<Button
+	    android:id="@+id/emergencyButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="24dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/conStatusTitle"
+	    android:background="#FF0000"
+	    android:layout_marginTop="10dp"
+	    android:textColor="#FFFFFF"
+	    android:text="stop" />
+
+    </RelativeLayout>
+
+    <!-- <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/leftCol"
+        android:layout_below="@+id/leftCol"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp" >
+
+        <TextView
+            android:id="@+id/cpshow"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="Capacitors: " />
+    </ScrollView> -->
+
+    <Button
+        android:id="@+id/delDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leftCol"
+        android:text="Delete" />
+
+</RelativeLayout>  

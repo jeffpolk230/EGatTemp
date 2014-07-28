@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<RelativeLayout android:id="@+id/relativeLayout1"
+	                android:layout_width="match_parent" 
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+<!-- 			<CheckBox
+		        android:id="@+id/checkbox"
+		        android:layout_alignParentRight="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent" /> -->
+	    	<TextView
+		        android:id="@+id/txtJobNameTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingRight="5sp"
+		        android:text="Job Number: "
+		        style="@android:style/TextAppearance.Large"/>
+	    
+	    	<TextView
+		        android:id="@+id/txtJobName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/txtJobNameTitle"
+		        style="@android:style/TextAppearance.Large"/>
+
+		  	<TextView
+		        android:id="@+id/txtIdTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/txtJobNameTitle"
+		        android:textColor="#5B5B5B"
+		        android:layout_marginLeft="5dp"
+		        android:paddingRight="5sp"
+		        android:text="ID: "
+		        style="@android:style/TextAppearance.Small"
+		        />
+		  			    
+		    <TextView
+		        android:id="@+id/txtId"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/txtIdTitle"
+		        android:textColor="#5B5B5B"
+		        style="@android:style/TextAppearance.Small"
+		        android:layout_alignBaseline="@id/txtIdTitle"/>
+		
+		  	<TextView
+		        android:id="@+id/txtSubstationTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/txtIdTitle"
+		        android:textColor="#5B5B5B"
+		        android:layout_marginLeft="5dp"
+		        android:paddingRight="5sp"
+		        android:text="Cap. serial: "
+		        style="@android:style/TextAppearance.Small"
+		        />		    
+		    <TextView
+		        android:id="@+id/txtSubstation"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/txtSubstationTitle"
+		        android:layout_alignBaseline="@id/txtSubstationTitle"
+		        android:textColor="#5B5B5B"
+		        style="@android:style/TextAppearance.Small"/>
+		
+		    <TextView
+		        android:id="@+id/txtLevelVoltageTitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_below="@id/txtSubstationTitle"
+		        android:text="Alias: "
+		        android:textColor="#5B5B5B"
+		        style="@android:style/TextAppearance.Small"/>
+		    <TextView
+		        android:id="@+id/txtLevelVoltage"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:layout_toRightOf="@id/txtLevelVoltageTitle"
+		        android:layout_alignBaseline="@id/txtLevelVoltageTitle"
+		        android:textColor="#5B5B5B"
+		        style="@android:style/TextAppearance.Small"/>
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_below="@+id/txtLevelVoltageTitle"
+		        android:layout_marginLeft="5dp">
+		        <TextView
+			        android:id="@+id/txtRated"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtSerialNumber"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtAlias"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtMeasuringVoltage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtFrequncy"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtCurrent"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtCapacitorValue"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>
+		        <TextView
+			        android:id="@+id/txtError"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#5B5B5B"
+			        style="@android:style/TextAppearance.Small"/>			        			        		        		    
+		    </LinearLayout>
+	</RelativeLayout>
+</LinearLayout>
